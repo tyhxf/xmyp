@@ -1,17 +1,18 @@
 <template>
   <div id="Categray">
       {{msg}}
-
+			<TabBar></TabBar>
   </div>
 </template>
 
 <script>
 
-
+import TabBar from 'common/Tabbar.vue'
 
 export default {
   name: 'Categray',
   components:{
+		TabBar
   },
   data(){
     return{

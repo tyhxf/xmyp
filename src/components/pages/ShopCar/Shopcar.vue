@@ -1,17 +1,18 @@
 <template>
   <div id="ShopCar">
       {{msg}}
-
+<TabBar></TabBar>
   </div>
 </template>
 
 <script>
 
-
+import TabBar from 'common/Tabbar.vue'
 
 export default {
   name: 'ShopCar',
   components:{
+		TabBar
   },
   data(){
     return{
