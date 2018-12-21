@@ -1,17 +1,18 @@
 <template>
   <div id="Taste">
       {{msg}}
-
+<TabBar></TabBar>
   </div>
 </template>
 
 <script>
 
-
+import TabBar from 'common/Tabbar.vue'
 
 export default {
   name: 'Taste',
   components:{
+		TabBar
   },
   data(){
     return{

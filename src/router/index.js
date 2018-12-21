@@ -6,7 +6,7 @@ import Categray from 'pages/Categray/Categray'
 import My from 'pages/My/My'
 import Shopcar from 'pages/Shopcar/Shopcar'
 import Taste from 'pages/Taste/Taste'
-
+import Err from '@/components/common/Err'
 Vue.use(Router)
 
 export default new Router({
@@ -30,6 +30,12 @@ export default new Router({
     {
       path: '/my',
       component: My,
-    }
+    },
+		{
+			path:'/notfind',
+			component:Err,
+			},
+			
+			{path:'**',redirect:'/notfind'}
   ]
 })

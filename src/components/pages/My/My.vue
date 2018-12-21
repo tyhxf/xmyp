@@ -1,15 +1,16 @@
 <template>
   <div id="My">
       {{msg}}
-
+<TabBar></TabBar>
   </div>
 </template>
 
 <script>
-
+import TabBar from 'common/Tabbar.vue'
 export default {
   name: 'My',
   components:{
+		TabBar
   },
   data(){
     return{

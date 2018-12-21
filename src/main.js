@@ -7,21 +7,22 @@ import Axios from 'axios'
 import reset from './style/reset .css'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+let root='http://10.9.48.220:3001'
 Vue.use(MintUI)
 
 Vue.config.productionTip = false
 
-// Axios.interceptors.response.use(function(response){
-//   return response.data;
-// },function(error){
-//   return Promise.reject(error);
-// })
+Axios.interceptors.response.use(function(response){
+  return response.data;
+},function(error){
+  return Promise.reject(error);
+})
 Vue.prototype.$axios=Axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router,root,
   components: { App },
   template: '<App/>'
 })

@@ -10,7 +10,13 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+			'/tyzhk':{
+				target:'http://10.9.48.220:3001',
+				changeOrigin:true,
+				pathRewrite:{"^/tyzhk":""}
+			}
+		},
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
