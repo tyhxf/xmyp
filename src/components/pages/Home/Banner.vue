@@ -39,7 +39,7 @@ export default {
 			let url='tyzhk/home/getBanner';
 		this.$axios.get(url)
 		.then((res)=>{
-			console.log(res)
+			// console.log(res)
 			this.banners=res.data
 		
 		})

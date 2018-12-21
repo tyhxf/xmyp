@@ -45,9 +45,11 @@
 		  color:@tabDefaultColor;
            width: 20%;
            .h(60);
+					 width:100%;
            .lh(60);
            text-align:center;
            .fs(16);
+					 background:@hui;
 		}
 		.sel{
 			color:black;
