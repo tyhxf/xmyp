@@ -1,6 +1,7 @@
 <template>
   <div id="Home">
 		{{msg}}
+		{{msg}}
      <Banner></Banner>
   </div>
 </template>
