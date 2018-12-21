@@ -1,18 +1,30 @@
 <template>
-  <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-view/>
+  <div id="banner">
+		111
+	<mt-swipe :auto="4000">
+  <mt-swipe-item>1</mt-swipe-item>
+  <mt-swipe-item>2</mt-swipe-item>
+  <mt-swipe-item>3</mt-swipe-item>
+</mt-swipe>
+
   </div>
 </template>
 
 <script>
+import {Swipe, SwipeItem } from 'mint-ui';
+import Vue from 'vue'
+	Vue.component(Swipe.name, Swipe);
+	Vue.component(SwipeItem.name, SwipeItem);
+	
 
-import Home from './components/pages/Home/Home'
 
 export default {
-  name: 'App',
+	
+	
+	
+  name: 'banner',
   components:{
-    Home
+    
   },
   data(){
     return{
@@ -23,13 +35,6 @@ export default {
 
 </script>
 
-<style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+<style scoped lang="less">
+
 </style>
