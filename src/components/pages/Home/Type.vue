@@ -11,7 +11,7 @@
 					<img :src="root+item.imgPath" alt="">
 				</div>	
 				<span>{{item.name}}</span>
-				<span>{{item.price}}</span>
+				<span class="red">${{item.price}}</span>
 			</div>
 		</div>
 		
@@ -34,6 +34,7 @@
 				this.$axios.post(url,{type:this.title})
 				.then((res)=>{
 					this.list=res.data
+					console.log(res)
 					
 				})
 				.catch((err)=>{
@@ -89,6 +90,10 @@
 					.w(115);
 					.h(122);
 				}
+			}
+			.red{
+				
+				color:red;
 			}
 		}
 	}
